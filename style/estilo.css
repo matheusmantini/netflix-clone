@@ -1,0 +1,249 @@
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* elementos base */
+
+body{
+  background-color: var(--preto);
+  font-family: 'Martel Sans', sans-serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .logo img{
+  width: 110px;
+  margin-top: 8px;
+}
+
+.navegacao{
+  margin-left: 20px;
+}
+
+.search-itens{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.search-itens i{
+  font-size: 16px;
+}
+
+.profile,
+.profile img{
+  display: inline-block;
+  width: 35px;  
+  height: 35px;
+  border-radius: 5px;
+}
+
+header nav a{
+  font-size: 10px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: #aaa;
+}
+
+/* DROPDOWN MENU RIGHT */
+
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #000;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #000;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* FIM DROPDOWN MENU RIGHT */
+
+/* filme principal */
+
+.filmes-principal{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), url('https://www.themoviedb.org/t/p/original/ccaZ3yyyC6rcMAQrlLZ51FpahNO.jpg');
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filmes-principal .descricao{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.filmes-principal .titulo{
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin-top: 15%;
+}
+
+.botao{
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s ease all;
+  margin-right: 8px;
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+.container{
+  margin: 0 20px;
+}
+
+.filmes-principal .container{
+  width: 80%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.carousel-filmes{
+margin-top: 5px;
+}
+
+.box-filmes-title{
+  font-size: 16px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.continuar-assistindo .item1{
+  display: inline-block;
+  width: 190px;
+}
+
+
+footer{
+  width: 100%;
+  padding: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer p{
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: left;
+}
+
+.social-media{
+  margin-bottom: -20px;
+}
+
+.social-media,
+.btn-cod-servico{
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media a{  
+  font-size: 32px;
+  color: #aaa;
+  margin: 0 15px;
+}
+
+.btn-cod-servico a{
+  margin-top: 10px;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 12px;
+  padding: 6px 8px;
+  border: 1px solid #aaa;
+}
+
+.btn-cod-servico a:hover{
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.wrapper a {
+  display: block;
+  text-align: left;
+  margin: 15px 0;
+  font-size: 13px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.wrapper a:hover{
+  text-decoration: underline;
+}
